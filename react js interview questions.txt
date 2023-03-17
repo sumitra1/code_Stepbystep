@@ -22,3 +22,28 @@ export default function App() {
 }
 
 
+Hide/Show and Toggel button
+
+======================================
+
+import "./styles.css";
+import {useState} from 'react';
+
+export default function App() {
+  const [status,setStatus]=useState(false);
+  const [buttonShow,setButtonShow]=useState(true);
+  return (
+    <div className="App">
+     {status?<h1>Hello Developers</h1>:null}
+
+     <button onClick={()=>{setStatus(true)}}>Show</button>
+     <button onClick={()=>{setStatus(false)}}>Hide</button>
+{/* //toggle */}
+     <button onClick={()=>{setStatus(!status),setButtonShow(!buttonShow)}}>{buttonShow?'Show':'Hide'}</button>
+    </div>
+  );
+}
+
+
+
+
