@@ -1,0 +1,24 @@
+take input and show onclick of button
+
+====================================================
+
+import "./styles.css";
+import { useState } from "react";
+
+export default function App() {
+  const [text, setText] = useState("");
+  const [print,setPrint]=useState(false);
+
+  return (
+    <div className="App">
+     {print?
+        <h1>{text}</h1>
+        :null
+        }
+      <input onChange={(e) => setText(e.target.value)} />
+      <button onClick={()=>setPrint(true)}>click</button>
+    </div>
+  );
+}
+
+
