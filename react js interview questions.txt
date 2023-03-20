@@ -45,5 +45,24 @@ export default function App() {
 }
 
 
+Multiple ternary operator
+
+============================
+
+import "./styles.css";
+import {useState} from 'react';
+
+export default function App() {
+let [loggedIn, setLoggedIn]=useState(3);
+
+  return (
+    <div className="App">
+      {loggedIn==1?<h1>Hello Sumi</h1>:loggedIn==2?<h1>Hello kavi</h1>:<h1>Hello niki</h1>}
+    </div>
+  );
+}
+
+
+
 
 
