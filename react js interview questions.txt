@@ -63,7 +63,3 @@ let [loggedIn, setLoggedIn]=useState(3);
 }
 
 
-
-
-//question4
-
